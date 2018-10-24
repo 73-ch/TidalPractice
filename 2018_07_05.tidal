@@ -1,0 +1,29 @@
+do
+  d1 $
+    fast (choose [2,2,2,2,4,4,8]) $
+    every 4 (jux (iter 6)) $
+    every 5 (rev) $
+    s "glitch:3*4"
+    #crush 0.5
+    #sustain 1.66
+    #gain 0.8
+    #n "[0.9 0.6 0.23 0.1]"
+  d2 $
+    every 6 (fast (choose [3,23.5,56.3,26.0])) $
+    every 4 (rev) $
+    s "808:3(3,8)"
+    #gain (1.9 * saw)
+    #shape 0.2
+    #delay 0.6
+    #delaytime 0.5
+  d3 $
+    every 4 (fast 2.0) $
+    every 5 (rev) $
+    sometimesBy 0.5 (chop 4) $
+    s "supersaw*2"
+    #n "[1 4 6, 8 3 2]/2"
+    #gain 0.8
+    #cutoff 1000
+    #shape 0.7
+    #room 0.9
+hush

@@ -1,0 +1,34 @@
+do
+  cps(0.60)
+  d1 $
+    stack [
+      sound "[glitch:3]"
+    ]
+    -- #room "1.0"
+    #gain "0.0"
+  d2 $
+    whenmod 8 6 (rev) $
+    jux (iter 8) $
+    stack [
+      sound ""
+    ]
+    #n "[1.0 3.0 1.4, 2.0 4.8 2.1]/2"
+    #room "1.8"
+
+  -- d3 $
+  --   sound "supersaw*4"
+  --   #gain (sine)
+    -- #room "[0.2 0.4 0.1 0.8]"
+    -- #n "[[2 4 6], [3 6 7]]"
+
+t2 (xfadeIn 8) $
+  whenmod 8 6 (density 2.0) $
+  -- jux (iter 4) $
+  stack [
+    sound "subroc3d:2(9,16)"
+  ]
+
+
+d1 $ sound "[glitch2:6,]/2" #gain 1.5
+
+hush

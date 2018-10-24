@@ -1,0 +1,7 @@
+d2 $
+  jux (iter 4) $
+  sound "[bd(3, 8, [1 3 2 7]/4), cp(5, 8, [2 5]/2)]"
+  # gain (run 4 * 0.5)
+  # n (run 4)
+  # resonance "0.3"
+  # room "0.3"

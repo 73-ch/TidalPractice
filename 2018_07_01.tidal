@@ -1,0 +1,18 @@
+cps(1)
+
+d1
+  $ fast (1.43)
+  -- $ up (choose [1,2,4,8])
+  $ sound "[nekore ~]*0.25"
+
+d2
+  $ fast (choose [0,0,0,0,4,8])
+  $ sound "sn*2"
+  # shape 0.4
+  # gain 0.5
+  # cutoff 5000
+  # crush 0.6
+
+
+  hush
+q

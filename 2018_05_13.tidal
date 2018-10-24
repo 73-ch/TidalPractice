@@ -1,0 +1,27 @@
+import Sound.Tidal.MIDI.Context
+
+do
+  hush
+  cps(0.5)
+  d1 $
+    every 6 (rev) $
+    every 8 (jux (iter 8)) $
+    stack [
+      sound "[bd(3,16) bd(9, 16)]/2",
+      sound "{hh glitch:2 ~ glitch:3, cp ~ ~ sn ~}"
+    ]
+    #room "0.8"
+    #shape "0.7"
+    -- #cutoff (scale 400 8000 $slow 8 $sine1)
+    #gain "1.0"
+  d2 $
+    sound "808mc*2 ~ ~ 808mc(3,4)"
+    #up "[3 6 7 9, 3 5 9 7]/2"
+    #shape "0.5"
+    #room "0.7"
+
+   -- #cutoff (scale 400 8000 $slow 8 $sine1)
+   -- #delay 0
+   -- #delaytime sine1
+
+   hush

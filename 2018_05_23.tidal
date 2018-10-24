@@ -1,0 +1,17 @@
+do
+  d1 $
+    every 4 (jux (iter 5)) $
+    stack [
+      sound "bd(5,8)"
+    ]
+    # shape "0.6"
+    #resonance "0.7"
+    #crush "60"
+    #gain 0.7
+  d2 $
+    sound "[~, ~ ~ ho*3 ho*2]/2"
+  d3 $
+    sound "[~, ~ ~ arpy*2 arpy*3]/2"
+    # room 0.5
+
+    hush

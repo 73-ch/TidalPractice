@@ -1,0 +1,21 @@
+cps 1.08
+
+d1
+  $ every 4 (rev)
+  $ sometimesBy 0.25 (density 2.0)
+  $ palindrome
+  $	s "[future(5,13) bd, ]?2"
+  #n "[1 4 7]/3"
+  # speed 1.2
+
+d2
+  $ s "sn*4"
+  #resonance 0.7
+
+d3
+  $ degrade
+  $ s "[rave:3]*2"
+  #shape 0.6
+  # accelerate "[1.9 0.7 1.0]?3"
+  #speed (irand(3))
+  
